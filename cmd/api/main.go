@@ -16,7 +16,7 @@ func main() {
 	app.Domain= "nefi.com"
 	log.Println("Starting app on port", port)
 
-	err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+	err := http.ListenAndServe(fmt.Sprintf(":%d", port), app.routes())
 	if err != nil {
 		log.Fatal(err)
 	}

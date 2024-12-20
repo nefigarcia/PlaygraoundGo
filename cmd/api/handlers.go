@@ -31,7 +31,7 @@ func(app *application) Home(w http.ResponseWriter, r *http.Request) {
 
 func (app *application) AllStudents(w http.ResponseWriter, r *http.Request){
 	var students []models.Student
-	rd, _ :=time.Parse("2024-20-12", "2024-20-12")
+	rd, _ :=time.Parse("2006-01-02", "2024-03-12")
 
 	highlander := models.Student {
 		ID:1,
